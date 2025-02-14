@@ -1,0 +1,9 @@
+version: "3.8"
+
+services:
+  blockchain:
+    build: .
+    container_name: blockchain_node
+    volumes:
+      - .:/app
+    command: [ "python", "blockchain.py" ]
